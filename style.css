@@ -1,0 +1,231 @@
+* {
+    /* This is more intuitive than the default content-box */
+    box-sizing: border-box;
+  }
+  
+
+.content-container {
+    width: 1400px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.site-container {
+    background-color:rgb(243, 211, 220)
+}
+
+.wrap {
+    /*padding-top: 20px;*/
+    padding-bottom: 20px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-size: 20px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.search-submit {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+}
+
+.search_rezept {
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    width: 350 px;
+}
+
+.nav-link ul {
+    /* To reset the list style and remove the markers. */
+    list-style: none;
+    padding-left: 0;
+  
+    /* To align the navigation and the header we need to set the same margin. */
+    margin: 16px;
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+}
+
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center;
+} 
+
+.site-footer {
+    padding-top: 2rem;
+    justify-content: space-between;
+    background-color: rgb(243, 211, 220);
+    text-align: center;
+    /*font-size: 0.875rem;*/
+}
+  
+
+.title-area {
+    background: url(logo.jpeg) no-repeat center;
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 15%;
+    background-size: contain;
+    width: 20%;
+    height: 0;
+    display: block;
+}
+
+.nav-seondary-container ul,
+.nav-primary-container ul {
+     /* To reset the list style and remove the markers. */
+     list-style: none;
+     padding-left: 0;
+   
+     /* To align the navigation and the header we need to set the same margin. */
+     margin: 16px;
+     display: flex;
+     gap: 18px;
+     flex-direction: column;
+}
+
+.page-header-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+h6 {
+    text-transform: uppercase;
+    letter-spacing: .035em;
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 480px) {
+    .nav-link ul {
+      flex-direction: row;
+    }
+
+    .nav-seondary-container ul,
+    .nav-primary-container ul {
+        flex-direction: row;
+      }
+  /* make sure we need this
+  .nav-link:hover {
+    color: #147d93;
+  } */
+}
+
+.social-link:hover,
+.search_rezept:hover,
+.nav-primary-link:hover,
+.nav-secondary-link:hover {
+    color: #b65772;
+    cursor: pointer;
+}
+ 
+.social-link.is-active,
+.search_rezept.is-active,
+.nav-primary-link.is-active,
+.nav-secondary-link.is-active {
+    color: #bd8393;
+    font-weight: 700;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.recipe_filters {
+    display: grid;
+    justify-content: center;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 150px);
+    text-align: center;  
+}
+
+.recipe_filter {
+    margin-bottom: 30px;
+}
+
+#diet,
+#cuisine_type,
+#recipe_type {
+    text-align: center;
+    padding: 6px 22px 6px 8px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+.card {
+    --padding: 1rem;
+    background: white;
+    border: 1px solid #777;
+    border-radius: .25rem;
+    overflow: hidden;
+  }
+
+  .card.card-shadow {
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+  }
+
+  .card-header.card-image {
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .card-header.card-image > img {
+    display: block;
+    width: 100%;
+    max-height: 200px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    transition: 200ms transform ease-in-out;
+  }
+  
+  .card:hover > .card-header.card-image > img {
+    transform: scale(1.025);
+  }
+
+  .card-footer {
+    margin-top: 1rem;
+    padding: var(--padding);
+    padding-top: 0;
+    text-align: center;
+  }
+  
+  .btn {
+    --color: hsl(350, 59%, 79%);
+    background: var(--color);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: .5em .75em;
+    border-radius: .25em;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .btn:hover, .btn:focus {
+    background: hsl(350, 59%, 60%);
+  }

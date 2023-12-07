@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/1fc3f3866a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class = "content-container">
+    <div class="site-container">
+      <div class="wrap">
+        <div class="main-nav">
+          <div class="search">
+            <form id="search_f" class="search_form">
+              <i class="fa-solid fa-magnifying-glass" style="color: #8c98ac;"></i>
+              <button type="submit" class="search-submit"></button>
+              <input type="search" class="search_rezept" placeholder="Search My Kitchen"> 
+            </form>
+          </div>
+          <div class="nav-link">
+            <ul>
+              <li>
+                <a class="social-link">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <li>
+                <a class="social-link">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="social-link">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a class="social-link">
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+              </li>
+              <li>
+                <a class="social-link">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <header class="site-header">
+      <div class="wrap">
+        <div class="header-nav">
+          <div class="nav-seondary-container">
+            <ul>
+              <li>
+                <a class="nav-secondary-link">All Recipes</a>
+              </li>
+              <li>
+                <a class="nav-secondary-link">Vegan</a>
+              </li>
+              <li>
+                <a class="nav-secondary-link">Gluten-Free</a>
+              </li>
+            </ul>
+          </div>
+          <div class="title-area"> </div>
+          <nav class="nav-primary-container">
+            <ul>
+              <li>
+                <a class="nav-primary-link">About</a>
+              </li>
+              <li>
+                <a class="nav-primary-link">Resources</a>
+              </li>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    
+    <div class="page-header-middle">
+      <div class="wrap">
+        <h1>All Recipes</h1>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="recipe_filters">
+        <div class="recipe_filter">
+          <h6>Special Diet</h6>
+          <div class="diet_dropdown">
+            <select id="diet" name="diet">
+              <option value>Any</option>
+              <option value="dairy-free">Dairy free</option>
+              <option value="egg-free">Egg free</option>
+              <option value="gluten-free">Gluten free</option>
+              <option value="high-protein">High protein</option>
+              <option value="vegan">Vegan</option>
+              <option value="vegetarian">Vegetarian</option>
+            </select>
+          </div>
+        </div>  
+      
+        <div class="recipe_filter">
+          <h6>Cuisine</h6>
+          <div class="cuisine_type_dropdown">
+            <select id="cuisine_type" name="cuisine_type">
+              <option value>Any</option>
+              <option value="Asian">Asian</option>
+              <option value="Austrian">Austrian</option>
+              <option value="Azerbaijan">Azerbaijan</option>
+              <option value="Caribbean">Caribbean</option>
+              <option value="Indian">Indian</option>
+              <option value="Mediterrean">Mediterrean</option>
+              <option value="Turkish">Turkish</option>
+            </select>
+          </div>
+        </div>
+      
+        <div class="recipe_filter">
+          <h6>Recipe Type</h6>
+          <div class="recipe_type_dropdown">
+            <select id="recipe_type" name="recipe_type">
+              <option value>Any</option>
+              <option value="appetizer">Appetizer</option>
+              <option value="breakfast">Breakfast</option>
+              <option value="lunch">Lunch</option>
+              <option value="salad">Salad</option>
+              <option value="snacks">Snacks</option>
+              <option value="soup">Soup</option>
+              <option value="dessert">Dessert</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <div class="wrap">
+    <div class="card-grid">
+      
+        <div class="card card-shadow">
+          <div class="card-header card-image">
+            <img src="1.jpg" alt="Chocolate Cake">
+          </div>
+          <div class="card-footer">
+            <button class="btn">Chocolate Cake</button>         
+          </div>
+        </div>
+      
+        <div class="card card-shadow">
+          <div class="card-header card-image">
+            <img src="1.jpg" alt="Chocolate Cake">
+          </div>
+          <div class="card-footer">
+            <button class="btn">Chocolate Cake</button>         
+          </div>
+        </div>
+      
+        <div class="card card-shadow">
+          <div class="card-header card-image">
+            <img src="1.jpg" alt="Chocolate Cake">
+          </div>
+          <div class="card-footer">
+            <button class="btn">Chocolate Cake</button>         
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+  <div class = "content-container">
+    <footer class="site-footer">
+      <div class="wrap">
+        <a >Privacy</a>
+        <a >Impressum</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
