@@ -1,11 +1,14 @@
 * {
     /* This is more intuitive than the default content-box */
     box-sizing: border-box;
-  }
-  
+}
+
+body {
+  margin: 0;
+}
 
 .content-container {
-    width: 1400px;
+    //width: 1400px;
     min-height: 300px;
     margin-left: auto;
     margin-right: auto;
@@ -63,7 +66,17 @@
     justify-content: space-between;
     font-size: 20px;
     align-items: center;
-} 
+    width: 80%;
+    margin-inline: auto;
+}
+
+.header-nav > * {
+  flex-basis: 33.33%;
+}
+
+/*.header-nav > .nav-secondary-container, .header-nav > .nav-primary-container {
+  flex: 1 1 0px;
+}*/
 
 .site-footer {
     padding-top: 2rem;
@@ -149,7 +162,7 @@ h6 {
   } */
 }
 
-@media (max-width: 950px) {
+@container (max-width: 950px) {
   .main-nav {
     justify-content: center;
     
