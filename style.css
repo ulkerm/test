@@ -209,8 +209,16 @@ h6 {
     padding: 6px 22px 6px 8px;
 }
 
+.page-for-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  max-width: 1170px
+}
+
+
 .card-grid {
-    /* container-type: inline-size;   */
+  /*container-type: inline-size; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
@@ -218,7 +226,7 @@ h6 {
   }
 
 .card {
-    
+     
     --padding: 1rem;
     background: white;
     border: 1px solid #777;
@@ -256,7 +264,8 @@ h6 {
     padding-top: 0;
     text-align: center;
   }
-  
+ 
+
   .btn {
     --color: hsl(350, 59%, 79%);
     background: var(--color);
@@ -273,6 +282,41 @@ h6 {
     background: hsl(350, 59%, 60%);
   }
 
-  /*  @container (width < 950px) {
+  
+@media (min-width: 950px) {
+  .page-for-card {
+    grid-template-columns: 1fr 250px;
+  }
+}
 
-  }   */
+ /* @container (max-width: 720px)  {
+    .card-shadow {
+      display: flex;
+      flex-direction: row;
+    }
+  }  */
+
+  @media (max-width: 350px)  {
+    .page-for-card {
+      display: flex;
+      flex-direction: row;
+    }
+  }  
+
+  
+  @media (max-width: 720px)  {
+    .card-shadow {
+      display: flex;
+      flex-direction: row;
+  }
+   
+}
+   /* .card-footer {
+      display: flex;
+      flex-direction: column;
+      background: black;
+    }
+  }
+  */
+  
+  
